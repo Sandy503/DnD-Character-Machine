@@ -10,6 +10,8 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "Fall2019",
+  password: "Sandy408",
   database: "DNDcharacter_db"
 });
+
+module.exports = connection;
