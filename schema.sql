@@ -1,0 +1,21 @@
+DROP DATABASE IF EXISTS DNDcharacter_db;
+
+CREATE DATABASE DNDcharacter_db;
+
+USE DNDcharacter_db;
+
+CREATE TABLE characters(
+  id INTEGER AUTO_INCREMENT NOT NULL,
+  name VARCHAR(100),
+  class VARCHAR(100),
+  race VARCHAR(100),
+  STRENGTH INTEGER(10),
+  DEXTERITY INTEGER(10),
+  CONSTITUTION INTEGER(10),
+  INTELLIGENCE INTEGER(10),
+  WISDOM INTEGER(10),
+  CHARISMA(10)
+)
+
+INSERT INTO characters (name, class, race, STRENGTH, DEXTERITY)
+values ("ChunChun Maru", "Paladin", "Half-elf", 15, 20);
