@@ -1,4 +1,8 @@
-SELECT * FROM DNDcharacter_db.race;
+
+USE DNDcharacter_db;
+
+INSERT INTO characters (name, class, race, STRENGTH, DEXTERITY)
+values ("ChunChun Maru", "Paladin", "Half-elf", 15, 20);
 
 INSERT INTO race (race , STR_mod, CHAR_mod)
 VALUES ("Dragonborn", 2, 1);
@@ -25,16 +29,6 @@ INSERT INTO race (race , STR_mod, DEX_mod, CONST_mod, INT_mod, WIS_mod, CHAR_mod
 VALUES ("Human", 1 , 1 ,1 ,1 ,1 ,1);
 INSERT INTO race (race , INT_mod,  CHAR_mod)
 VALUES ("Tiefling", 1, 2);
-
-USE DNDcharacter_db;
-
-CREATE TABLE class(
-id INT NOT NULL AUTO_INCREMENT,
-Class VARCHAR(100),
-Hit_die VARCHAR(100),
-Primary_ability VARCHAR(100),
-PRIMARY KEY (id)
-);
 
 INSERT INTO class (Class, Hit_die, Primary_ability)
 VALUES ("Barbarian", "d12", "STRENGTH");
