@@ -30,5 +30,10 @@ CHAR_mod INTEGER(10),
 PRIMARY KEY (id)
 );
 
-INSERT INTO characters (name, class, race, STRENGTH, DEXTERITY)
-values ("ChunChun Maru", "Paladin", "Half-elf", 15, 20);
+CREATE TABLE class(
+id INT NOT NULL AUTO_INCREMENT,
+Class VARCHAR(100),
+Hit_die VARCHAR(100),
+Primary_ability VARCHAR(100),
+PRIMARY KEY (id)
+);
