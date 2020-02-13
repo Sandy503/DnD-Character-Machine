@@ -7,12 +7,12 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "../Public/DandD.html"));
 });
 
-app.get("/character", function(req, res) {
-  res.sendFile(path.join(__dirname, "../Public/newCharacter.html"))
+app.get("/characters", function(req, res) {
+  res.sendFile(path.join(__dirname, "../Public/characters.html"))
 });
 
-app.get("/all", function(req, res) {
-  res.sendFile(path.join(__dirname, "../Public/allCharacters.html"));
+app.get("/create", function(req, res) {
+  res.sendFile(path.join(__dirname, "../Public/newCharacter.html"));
 });
 // When we have the html files for the "character creation" and "Stored characters" pages, I'll update the "/all" & "/character" routes.
 
