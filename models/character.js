@@ -1,3 +1,5 @@
+const Race = require("./race")
+
 module.exports = (sequelize, Datatypes) => {
     const Character = sequelize.define("Character", {
         name: {
@@ -13,10 +15,6 @@ module.exports = (sequelize, Datatypes) => {
         },
         race: {
             type: Datatypes.INTEGER,
-            references: {
-                model: character,
-                key: "id"
-            }
         },
         STRENGTH: {
             type: Datatypes.INTEGER,
@@ -38,9 +36,13 @@ module.exports = (sequelize, Datatypes) => {
             type: Datatypes.INTEGER,
             allowNull: false
         },
+        CHARISMA:{
+            type: Datatypes.INTEGER,
+            allowNull: false
+        },
         Alignment: {
             type: Datatypes.STRING
         }
     });
     return Character;
-};
+}

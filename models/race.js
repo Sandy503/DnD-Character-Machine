@@ -5,22 +5,22 @@ module.exports = (sequelize, Datatypes) => {
             allowNull: false
         },
         STR_Mod: {
-            type: Datatypes.Integer
+            type: Datatypes.INTEGER
         },
         DEX_Mod: {
-            type: Datatypes.Integer
+            type: Datatypes.INTEGER
         },
         CONST_Mod: {
-            type: Datatypes.Integer
+            type: Datatypes.INTEGER
         },
         INT_Mod: {
-            type: Datatypes.Integer
+            type: Datatypes.INTEGER
         },
         WIS_Mod: {
-            type: Datatypes.Integer
+            type: Datatypes.INTEGER
         },
         CHAR_Mod: {
-            type: Datatypes.Integer
+            type: Datatypes.INTEGER
         }
     });
     return Race;

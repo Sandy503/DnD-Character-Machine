@@ -8,9 +8,10 @@ module.exports = (sequelize, Datatypes) => {
             type: Datatypes.STRING
         },
         primary_ability: {
-            type: Datatypes.String
+            type: Datatypes.STRING
         }
     });
+
 (async () => {
     await sequelize.sync({ force: true});
     
@@ -42,4 +43,3 @@ const class_table = User.build(
     });
     return Class;
 }
-    
