@@ -8,8 +8,9 @@ module.exports = (sequelize, Datatypes) => {
             type: Datatypes.STRING
         },
         primary_ability: {
-            type: Datatypes.String
+            type: Datatypes.STRING
         }
     });
+
     return Class
 }

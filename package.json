@@ -1,10 +1,13 @@
 {
-  "name": "DnD-Character-Machine",
+  "name": "dnd-character-machine",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.4",
+    "express-session": "^1.16.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,7 +18,6 @@
     "type": "git",
     "url": "git+https://github.com/Sandy503/DnD-Character-Machine.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
