@@ -1,4 +1,3 @@
-const Race = require("./race")
 
 module.exports = (sequelize, Datatypes) => {
     const Character = sequelize.define("Character", {
