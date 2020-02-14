@@ -44,4 +44,4 @@ const classes = [
         hit_die : "d6",
         primary_ability : "Intelligence"
     }
-]
+];
