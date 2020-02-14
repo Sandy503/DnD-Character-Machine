@@ -44,6 +44,7 @@ const classes = [
         hit_die : "d6",
         primary_ability : "Intelligence"
     }
+
 ]
 
 const races = [ 
@@ -77,3 +78,6 @@ const races = [
 ]
 
 module.exports = (classes, races);
+
+];
+
