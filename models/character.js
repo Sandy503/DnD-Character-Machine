@@ -1,3 +1,4 @@
+
 module.exports = (sequelize, Datatypes) => {
     const Character = sequelize.define("Character", {
         name: {

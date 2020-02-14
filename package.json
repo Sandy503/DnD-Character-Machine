@@ -5,9 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
+    "express-session": "^1.16.1",
     "mysql2": "^2.1.0",
-    "sequelize": "^5.21.4",
-    "express-session": "^1.16.1"
+    "sequelize": "^5.21.4"
   },
   "devDependencies": {},
   "scripts": {
