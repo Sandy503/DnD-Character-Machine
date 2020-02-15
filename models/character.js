@@ -42,6 +42,8 @@ module.exports = (sequelize, Datatypes) => {
         Alignment: {
             type: Datatypes.STRING
         }
+    }, {
+        timestamps: false
     });
     return Character;
 }

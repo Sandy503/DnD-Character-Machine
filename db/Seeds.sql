@@ -1,8 +1,8 @@
 
 USE DNDcharacter_db;
 
-INSERT INTO characters (name, class, race, STRENGTH, DEXTERITY)
-values ("ChunChun Maru", "Paladin", "Half-elf", 15, 20);
+INSERT INTO characters(name, class, race, STRENGTH, DEXTERITY,CONSTITUTION, INTELLIGENCE, WISDOM , CHARISMA, Alignment)
+values ("ChunChun Maru", "Paladin", "Half-elf", 18, 10, 15, 8 , 10, 19,   "Lawful-good");
 
 INSERT INTO race (race , STR_mod, CHAR_mod)
 VALUES ("Dragonborn", 2, 1);

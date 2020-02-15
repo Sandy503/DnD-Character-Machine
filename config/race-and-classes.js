@@ -79,5 +79,5 @@ const races = [
 
 module.exports = (classes, races);
 
-];
+
 
