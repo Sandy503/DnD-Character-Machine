@@ -31,16 +31,16 @@ module.exports = app => {
         }).then(result => {return res.json(result)});
     })
     //POST
-    app.post("/api/characters", (req,res) => {
+    app.post("/api/characters/", (req,res) => {
         db.Character.create({
             name: req.body.name,
             class: req.body.class, //this may change depending on the public js
             race: req.body.race, //this may change depending on the public js
-            STRENGTH: req.body.str,
-            DEXTERITY: req.body.dex,
-            CONSTITUTION: req.body.con,
-            INTELLIGENCE: req.body.int,
-            WISDOM: req.body.wis,
+            STRENGTH: req.body.STRENGTH,
+            DEXTERITY: req.body.DEXTERITY,
+            CONSTITUTION: req.body.CONSTITUTION,
+            INTELLIGENCE: req.body.INTELLIGENCE,
+            WISDOM: req.body.WISDOM,
             Alignment: req.body.alignment
         }).then(result => (res.json(result)));
     })
@@ -54,7 +54,7 @@ module.exports = app => {
         }).then(result => {res.json(result)});
       });
     //PUT/UPDATE
-    app.put("/api/characters", (req, res) => {
+    app.put("/api/characters/", (req, res) => {
         db.Character.update(req.body,
           {
             id: req.body.id
