@@ -13,7 +13,7 @@ app.get("/characters", function(req, res) {
 });
 
 app.get("/create", function(req, res) {
-  res.sendFile(path.join(__dirname, "../public/newCharacter.html"));
+  res.sendFile(path.join(__dirname, "../Public/create.html"));
 });
 // When we have the html files for the "character creation" and "Stored characters" pages, I'll update the "/all" & "/character" routes.
 
