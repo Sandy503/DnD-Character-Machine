@@ -1,33 +1,23 @@
 console.log("connected");
 
 function getCharacters() {
-  const charBlock = $('.char-block');
   $.get("/api/characters", function(data) {
+    const charBlock = $('#charContainer');
 
-    let newChar = `<div class="row">
-    <h2>${data[0].name}</h2>
-    </div>  
-    <div class="row">
-    <p class="">${data[0].race}</p> ${data[0].class}</p> <p>${data[0].Alignment}</p>
-    </div>
-    <p class="ab-score">STR: ${data[0].STRENGTH}</p>
-    <p class="ab-score">DEX: ${data[0].DEXTERITY}</p>
-    <p class="ab-score">CON: ${data[0].CONSTITUTION}</p>
-    <p class="ab-score">INT: ${data[0].INTELLIGENCE}</p>
-    <p class="ab-score">WIS: ${data[0].WISDOM}</p>
-    <p class="ab-score">CHA: ${data[0].CHARISMA}</p>`;
+    for(var i =0; i< data.length; i++){
+    let newChar=`<div class="row">
+    <h2>${data[i].name}</h2></div><div class="row">
+    <p class="">${data[i].race}</p> ${data[i].class}</p> <p>${data[i].Alignment}</p></div>
+    <p class="ab-score">STR: ${data[i].STRENGTH}</p>
+    <p class="ab-score">DEX: ${data[i].DEXTERITY}</p>
+    <p class="ab-score">CON: ${data[i].CONSTITUTION}</p>
+    <p class="ab-score">INT: ${data[i].INTELLIGENCE}</p>
+    <p class="ab-score">WIS: ${data[i].WISDOM}</p>
+    <p class="ab-score">CHA: ${data[i].CHARISMA}</p>`;
+
     charBlock.append(newChar);
-    console.log(newChar);
-    console.log(data);
-
-    document.body.innerHTML = newChar;
-  })
+    }
+  });
 }
 getCharacters();
 
-
-const allCharacters = `
-<ul class="character">
-  ${cha.map(dog => `<li>${dog.name} is ${dog.age * 7}</li>`)}
-</ul>
-`;
