@@ -82,4 +82,9 @@ const races = [
 
 ]
 
+<<<<<<< HEAD:config/raceIndex.js
 module.exports = races;
+=======
+module.exports = (classes, races);
+
+>>>>>>> 512625d25c4578a49e2ab0acb014dd363e21ccd5:config/race-and-classes.js
