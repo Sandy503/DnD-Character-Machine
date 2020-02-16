@@ -13,7 +13,7 @@ module.exports = (sequelize, Datatypes) => {
             allowNull: false
         },
         race: {
-            type: Datatypes.INTEGER,
+            type: Datatypes.STRING,
         },
         STRENGTH: {
             type: Datatypes.INTEGER,

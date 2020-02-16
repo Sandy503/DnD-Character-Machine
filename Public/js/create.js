@@ -15,7 +15,7 @@ const newCha = $("#char");
 
 $(charForm).on("submit", event => {
     event.preventDefault();
-    let invalid= 0;
+    /*let invalid= 0;
     $('.form-group').each(() => {
         if ($(this).val() == '') {
             invalid++;
@@ -24,7 +24,7 @@ $(charForm).on("submit", event => {
    if(invalid>0){
     alert("Make sure all Fields are filled before submitting")
     return; 
-   }
+   } else{ */
     var newChar = {
         name: newName.val().trim(),
         class: newCharClass.val().trim(),
@@ -35,10 +35,11 @@ $(charForm).on("submit", event => {
         INTELLIGENCE: newInt.val().trim(),
         WISDOM: newWis.val().trim(),
         CHARISMA: newCha.val().trim(),
-        alignment:newAlignment.val().trim()
+        alignment: newAlignment.val().trim()
     };
     console.log(newChar);
     submitChar(newChar);
+//}
 });
 
 function submitChar(Char) {

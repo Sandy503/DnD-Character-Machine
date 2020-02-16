@@ -41,6 +41,7 @@ module.exports = app => {
             CONSTITUTION: req.body.CONSTITUTION,
             INTELLIGENCE: req.body.INTELLIGENCE,
             WISDOM: req.body.WISDOM,
+            CHARISMA: req.body.CHARISMA,
             Alignment: req.body.alignment
         }).then(result => (res.json(result)));
     })
