@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script>
+
+    function rollD6() {
+     var request = $.ajax({
+    url: "http://roll.diceapi.com/json/d6",
+    type: "GET",
+    dataType: "json"
+  });
+  request.done(function(roll) {
+    $("#diceRoll").html(roll);
+  });
+}
+  </script>
+  <script>
+        
+function rollD20() {
+  var request = $.ajax({
+    url: "http://roll.diceapi.com/json/d20",
+    type: "GET",
+    dataType: "json"
+  });
+  request.done(function(roll) {
+    $("#diceRoll").html(roll);
+  });
+}
+  </script>
+</head>
+<body>
+  <div id="diceRoll">
+
+  </div>
+  <input type="button" value="Roll those dice" onclick="rollD6();"/>
+</body>
+</html>
+
