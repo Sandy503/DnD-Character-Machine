@@ -6,88 +6,114 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href= "stylesheets/style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="./js/create.js"></script>
 </head>
 <body>
-    <div>
-        <form id="charForm">
-            <div class="form-group col-5">
-                <label for="dungeoneer-name">Dungeoneer Name</label>
-                <input type="name" class="form-control" id="dungeoneer-name" placeholder="">
-            </div>
-            <div class="form-group col-5">
-                <label for="classSelect">Class</label>
-                <select class="form-control" id="classSelect">
-                    <option selected>Choose...</option>
-                    <option>Barbarian</option>
-                    <option>Bard</option>
-                    <option>Cleric</option>
-                    <option>Fighter</option>
-                    <option>Paladin</option>
-                    <option>Ranger</option>
-                    <option>Rogue</option>
-                    <option>Sorcerer</option>
-                    <option>Warlock</option>
-                    <option>Wizard</option>
-                </select>
-            </div>
+        <nav class="navbar justify-content-start navbar-dark bg-dark">
+                <h1 class="text-white">Create</h1>
+                <a class="page-linker" href="/">Home</a>
+                <a class="page-linker" href="/characters">Character Database</a>   
+        </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form id="charForm">
+                    <div class="form-group col-12">
+                        <label for="dungeoneer-name">Dungeoneer Name</label>
+                        <input type="name" class="form-control" id="dungeoneer-name" placeholder="">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="classSelect">Class</label>
+                        <select class="form-control" id="classSelect">
+                            <option selected>Choose...</option>
+                            <option>Barbarian</option>
+                            <option>Bard</option>
+                            <option>Cleric</option>
+                            <option>Fighter</option>
+                            <option>Paladin</option>
+                            <option>Ranger</option>
+                            <option>Rogue</option>
+                            <option>Sorcerer</option>
+                            <option>Warlock</option>
+                            <option>Wizard</option>
+                        </select>
+                    </div>
 
-            <div class="form-group col-5">
-                <label for="raceSelect">Race</label>
-                <select class="form-control" id="raceSelect">
-                    <option selected>Choose...</option>
-                    <option>Dragonborn</option>
-                    <option>Dwarf</option>
-                    <option>Elf</option>
-                    <option>Gnome</option>
-                    <option>Half-Elf</option>
-                    <option>Halfling</option>
-                    <option>Half-Orc</option>
-                    <option>Human</option>
-                    <option>Tiefling</option>
-                </select>
-            </div>
+                    <div class="form-group col-12">
+                        <label for="raceSelect">Race</label>
+                        <select class="form-control" id="raceSelect">
+                            <option selected>Choose...</option>
+                            <option>Dragonborn</option>
+                            <option>Dwarf</option>
+                            <option>Elf</option>
+                            <option>Gnome</option>
+                            <option>Half-Elf</option>
+                            <option>Halfling</option>
+                            <option>Half-Orc</option>
+                            <option>Human</option>
+                            <option>Tiefling</option>
+                        </select>
+                    </div>
 
-            <div class="form-group col-5">
-                <label for="alignment">Alignment</label>
-                <input type="name" class="form-control" id="alignment" placeholder="">
-            </div>
+                    <div class="form-group col-12">
+                        <label for="alignment">Alignment</label>
+                        <input type="name" class="form-control" id="alignment" placeholder="">
+                    </div>
 
-            <div class="form-group col-5">
-                <label for="str">Strength</label>
-                <input type="number" min="3" max="18"  class="form-control" id="str" placeholder="">
-            </div>
+                    <div class="form-group col-12">
+                        <label for="str">Strength</label>
+                        <input type="number" min="3" max="18"  class="form-control" id="str" placeholder="">
+                    </div>
 
-            <div class="form-group col-5">
-                <label for="dex">Dexterity</label>
-                <input type="number" min="3" max="18"  class="form-control" id="dex" placeholder="">
-            </div>
+                    <div class="form-group col-12">
+                        <label for="dex">Dexterity</label>
+                        <input type="number" min="3" max="18"  class="form-control" id="dex" placeholder="">
+                    </div>
 
-            <div class="form-group col-5">
-                <label for="con">Constitution</label>
-                <input type="number" min="3" max="18"  class="form-control" id="con" placeholder="">
-            </div>
+                    <div class="form-group col-12">
+                        <label for="con">Constitution</label>
+                        <input type="number" min="3" max="18"  class="form-control" id="con" placeholder="">
+                    </div>
 
-            <div class="form-group col-5">
-                <label for="int">Intelligence</label>
-                <input type="number" min="3" max="18"  class="form-control" id="int" placeholder="">
-            </div>
+                    <div class="form-group col-12">
+                        <label for="int">Intelligence</label>
+                        <input type="number" min="3" max="18"  class="form-control" id="int" placeholder="">
+                    </div>
 
-            <div class="form-group col-5">
-                <label for="wis">Wisdom</label>
-                <input type="number" min="3" max="18"  class="form-control" id="wis" placeholder="">
-            </div>
+                    <div class="form-group col-12">
+                        <label for="wis">Wisdom</label>
+                        <input type="number" min="3" max="18"  class="form-control" id="wis" placeholder="">
+                    </div>
 
-            <div class="form-group col-5">
-                <label for="char">Charisma</label>
-                <input type="number" min="3" max="18" class="form-control" id="char" placeholder="">
-            </div>
-            
-            <div class="form-group">
-            <button type="submit" class="btn btn-primary my-1 form-control col-2" id="submit">Submit</button>
-            </div>
-            </form>
-        </div>
+                    <div class="form-group col-12">
+                        <label for="char">Charisma</label>
+                        <input type="number" min="3" max="18" class="form-control" id="char" placeholder="">
+                    </div>
+                    
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-primary my-1 form-control col-2" id="submit">Submit</button>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-6 border">
+                    <div class="row justify-content-center">
+                        <h2 class="text-wrap">Lost your dice? Click the button below to roll for your stats. An Ability Score is taken from rolling 4 d6 and removing the lowest lowest roll.</h2>
+                    </div>
+                    <div class="row justify-content-center">
+                    <button id="roll">Roll for stats!</button>
+                    </div>
+                    <div class="row col-12">
+                        <div id="rollResult">
+                            <div id="die1" class="dice col-3">0</div>
+                            <div id="die2" class="dice col-3">0</div>
+                            <div id="die3" class="dice col-3">0</div>
+                            <div id="die4" class="dice col-3">0</div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </div>
 </body>
 </html>

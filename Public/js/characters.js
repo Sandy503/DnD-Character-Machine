@@ -7,7 +7,9 @@ function getCharacters() {
     for(var i =0; i< data.length; i++){
     let newChar=`<div class="row">
     <h2>${data[i].name}</h2></div><div class="row">
-    <p class="">${data[i].race}</p> ${data[i].class}</p> <p>${data[i].Alignment}</p></div>
+    <p class="">${data[i].race}</p>
+    <p>${data[i].class}  </p> 
+    <p>${data[i].Alignment}</p></div>
     <p class="ab-score">STR: ${data[i].STRENGTH}</p>
     <p class="ab-score">DEX: ${data[i].DEXTERITY}</p>
     <p class="ab-score">CON: ${data[i].CONSTITUTION}</p>

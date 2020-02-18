@@ -49,3 +49,9 @@ function submitChar(Char) {
 }
 
 });
+
+$("roll").on("click", () =>  {
+    
+      }
+  );
+  

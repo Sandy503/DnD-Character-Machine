@@ -8,6 +8,7 @@ img {
    background-repeat: no-repeat;
    background-attachment: fixed;  
    background-size: cover;
+   color: aliceblue
  }
  
  .centered {
@@ -25,3 +26,14 @@ img {
    margin: 5px;
    float: left;
  }
+
+ .dice{
+  float: left;
+  background: whitesmoke;
+  border: #999 1px solid;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  margin: 5px;
+  color: black;
+}
