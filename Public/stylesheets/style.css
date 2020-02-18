@@ -1,9 +1,4 @@
-img {
-  width: 60px;
-  height: 60px;
- }
- 
- body {
+body {
    background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702088093.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;  
@@ -27,7 +22,13 @@ img {
    float: left;
  }
 
- .dice{
+/*img {
+ max-width: 100%;
+  height: auto;
+  float: center;
+}
+
+.dice{
   float: left;
   background: whitesmoke;
   border: #999 1px solid;
