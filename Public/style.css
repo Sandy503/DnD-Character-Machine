@@ -19,7 +19,12 @@ body {
   color: black;
   transform: translate(-50%, -50%);
 }
-
+.page-linker{
+  color: aliceblue;
+  font-size: 14pt;
+  margin: 5px;
+  float: left;
+}
 
 * {
   box-sizing: border-box;
