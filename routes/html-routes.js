@@ -5,11 +5,11 @@ var router = express.Router();
 
 module.exports = function(app) {
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "../public/DandD.html"));
+  res.sendFile(path.join(__dirname, "../Public/DandD.html"));
 });
 
 app.get("/characters", function(req, res) {
-  res.sendFile(path.join(__dirname, "../public/characters.html"))
+  res.sendFile(path.join(__dirname, "../Public/characters.html"))
 });
 
 app.get("/create", function(req, res) {
